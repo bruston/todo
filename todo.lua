@@ -72,7 +72,7 @@ f = io.open(todoFile, "a")
 if not f then
     return printf("Unable to access %s/.todos", todoFile)
 end
-f.close()
+f:close()
 
 -- Process command-line arguments and call appropriate function.
 if #arg == 0 then
